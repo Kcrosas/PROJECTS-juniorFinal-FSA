@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Final Project</title>
+    <script defer src="/dist/main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background-color: #a8d0e6;
+        background-image: url("/media/background.png");
+        background-size: 100px;
+      }
+      #homeDiv {
+        display: flex;
+        justify-content: center;
+        flex-grow: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+      }
+      #homeImage {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      #homeLink {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+      #homeLink > div {
+        border: 1px solid gray;
+        width: 150%;
+        margin: 25px;
+        height: 150px;
+      }
+
+      #components {
+        background-color: white;
+        margin: auto;
+        width: 75%;
+        padding-top: 20px;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+      }
+
+      #bannerImage {
+        max-height: 100%;
+        max-width: 100%;
+      }
+      #bannerDiv {
+        height: 60px;
+      }
+      input {
+        width: 100%;
+      }
+      /*Students*/
+      #allStudent {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+      }
+      #addStudentDiv {
+        width: 40%;
+        padding-right: 10px;
+      }
+      #allStudentList {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+      }
+      #allStudentList > li {
+        width: calc(100% * (1 / 3));
+        border: 1px solid black;
+        margin: 6px;
+        padding: 3px;
+        box-shadow: 6px 10px #888888;
+        border-radius: 5px;
+      }
+      /*Campuses*/
+      #campusView {
+        display: flex;
+      }
+
+      #allCampus {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        width: 400px;
+      }
+      #allCampus > li {
+        width: calc(100% * (1 / 3));
+        text-align: center;
+        border: 1px solid black;
+        margin: 6px;
+        padding: 3px;
+        box-shadow: 6px 10px #888888;
+        border-radius: 5px;
+      }
+
+      /*Navigation*/
+      #navBar {
+        background-color: #24305e;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 3px solid gold;
+        border-top: 3px solid gold;
+      }
+      #navBarInternal {
+        display: flex;
+
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        background-color: #24305e;
+      }
+      #navBarInternal > h1 {
+        color: white;
+      }
+      #navBarInternal > ul > li > a {
+        color: white;
+      }
+      #navBarInternal > ul > li {
+        margin: 3px;
+      }
+      #navBarInternal > ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #footer {
+        background-color: #24305e;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        border-bottom: 3px solid gold;
+        border-top: 3px solid gold;
+      }
+      #footerList > li > a {
+        color: white;
+      }
+      #footerList {
+        border-right: solid 2px gold;
+        border-left: solid 2px gold;
+
+        padding-right: 15px;
+        padding-right: 15px;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <div id="root"></div>
+  </body>
+</html>
